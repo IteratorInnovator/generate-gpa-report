@@ -1,49 +1,63 @@
 [
     {
-        "2024/2025 Semester 1": [
+        "semester": "2024/2025 Semester 1",
+        "start_date": "August 2024",
+        "end_date": "December 2024",
+        "modules": [
             {
                 "module": "Computational Thinking and Programming",
                 "grade": "A-",
-                "credit_unit": 1.0
+                "credit_unit": 1.0,
+                "status": "Completed"
             },
             {
                 "module": "Computational Fundamentals",
                 "grade": "B+",
-                "credit_unit": 1.0
+                 "credit_unit": 1.0,
+                "status": "Completed"
             },
             {
                 "module": "Writing and Reasoning",
                 "grade": "B+",
-                "credit_unit": 1.0
+                "credit_unit": 1.0,
+                "status": "Completed"
             },
             {
                 "module": "Economics and Society",
                 "grade": "B+",
-                "credit_unit": 1.0
+                "credit_unit": 1.0,
+                "status": "Completed"
             }
         ]
     },
     {
-        "2024/2025 Semester 2": [
+        "semester": "2024/2025 Semester 2",
+        "start_date": "January 2025",
+        "end_date": "May 2025",
+        "modules": [
             {
                 "module": "Algorithms and Programming",
                 "grade": "IP",
-                "credit_unit": 1.0
+                "credit_unit": 1.0,
+                "status": "In Progress"
             },
             {
-                "module": "Data Managemetn",
+                "module": "Data Management",
                 "grade": "IP",
-                "credit_unit": 1.0
+                "credit_unit": 1.0,
+                "status": "In Progress"
             },
             {
                 "module": "Web Application Development I",
                 "grade": "IP",
-                "credit_unit": 1.0
+                "credit_unit": 1.0,
+                "status": "In Progress"
             },
             {
                 "module": "Big Questions - Happiness and Suffering",
                 "grade": "B+",
-                "credit_unit": 1.0
+                "credit_unit": 1.0,
+                "status": "In Progress"
             }
         ]
     }
