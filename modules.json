@@ -1,0 +1,50 @@
+[
+    {
+        "2024/2025 Semester 1": [
+            {
+                "module": "Computational Thinking and Programming",
+                "grade": "A-",
+                "credit_unit": 1.0
+            },
+            {
+                "module": "Computational Fundamentals",
+                "grade": "B+",
+                "credit_unit": 1.0
+            },
+            {
+                "module": "Writing and Reasoning",
+                "grade": "B+",
+                "credit_unit": 1.0
+            },
+            {
+                "module": "Economics and Society",
+                "grade": "B+",
+                "credit_unit": 1.0
+            }
+        ]
+    },
+    {
+        "2024/2025 Semester 2": [
+            {
+                "module": "Algorithms and Programming",
+                "grade": "IP",
+                "credit_unit": 1.0
+            },
+            {
+                "module": "Data Managemetn",
+                "grade": "IP",
+                "credit_unit": 1.0
+            },
+            {
+                "module": "Web Application Development I",
+                "grade": "IP",
+                "credit_unit": 1.0
+            },
+            {
+                "module": "Big Questions - Happiness and Suffering",
+                "grade": "B+",
+                "credit_unit": 1.0
+            }
+        ]
+    }
+]
