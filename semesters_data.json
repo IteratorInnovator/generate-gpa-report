@@ -7,25 +7,25 @@
             {
                 "module": "Computational Thinking and Programming",
                 "grade": "A-",
-                "credit_unit": 1.0,
+                "credit_unit": "1.0",
                 "status": "Completed"
             },
             {
                 "module": "Computational Fundamentals",
                 "grade": "B+",
-                "credit_unit": 1.0,
+                "credit_unit": "1.0",
                 "status": "Completed"
             },
             {
                 "module": "Writing and Reasoning",
                 "grade": "B+",
-                "credit_unit": 1.0,
+                "credit_unit": "1.0",
                 "status": "Completed"
             },
             {
                 "module": "Economics and Society",
                 "grade": "B+",
-                "credit_unit": 1.0,
+                "credit_unit": "1.0",
                 "status": "Completed"
             }
         ]
@@ -38,25 +38,25 @@
             {
                 "module": "Algorithms and Programming",
                 "grade": "IP",
-                "credit_unit": 1.0,
+                "credit_unit": "1.0",
                 "status": "In Progress"
             },
             {
                 "module": "Data Management",
                 "grade": "IP",
-                "credit_unit": 1.0,
+                "credit_unit": "1.0",
                 "status": "In Progress"
             },
             {
                 "module": "Web Application Development I",
                 "grade": "IP",
-                "credit_unit": 1.0,
+                "credit_unit": "1.0",
                 "status": "In Progress"
             },
             {
                 "module": "Big Questions - Happiness and Suffering",
-                "grade": "B+",
-                "credit_unit": 1.0,
+                "grade": "IP",
+                "credit_unit": "1.0",
                 "status": "In Progress"
             }
         ]
