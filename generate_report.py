@@ -2,7 +2,7 @@ from reportlab.platypus import LongTable, TableStyle, Paragraph
 from reportlab.lib import colors
 from reportlab.platypus.flowables import Spacer
 from reportlab.pdfgen import canvas
-from reportlab.platypus.paragraph import ParaLines
+from reportlab.lib.styles import ParagraphStyle
 
 
 def create_table(table_data):
@@ -38,9 +38,19 @@ def create_total_summary(semester_total):
     </font>
     """
     total_summary_text = Paragraph(text=text)
+    
+def create_cumulative_summary(CGPA, total_credit_units_earned):
+    summary_text = f"""
+    <font name=Times color={colors.black} size=12>
+        <p><u>Cumulative Total</u></p>
+        <p>Course Units Earned = {total_credit_units_earned}</p>
+        <p>Cumulative CPA = {CGPA}</p>
+    </font>
+    """
+    cumulative_summary = Paragraph(text=summary_text)
+    return cumulative_summary
 
-print(create_semester_header("2024/2025 Semester 1"))
-
+print(help(ParagraphStyle))
 # canva = canvas.Canvas("test.pdf")
 # fonts = canva.getAvailableFonts()
 # print(help(colors))
