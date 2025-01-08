@@ -51,10 +51,10 @@ def calculate_cumulative_total(list_of_semester_totals):
         cumulative_total_grade_points += semester[0] * semester[1]
         cumulative_total_credits += semester[1]
     try:
-        cummulative_gpa = round(cumulative_total_grade_points / cumulative_total_credits, 2)
+        cumulative_gpa = round(cumulative_total_grade_points / cumulative_total_credits, 2)
     except ZeroDivisionError as e:
-        return ((0.0, 0.0))
-    return cumulative_total_grade_points, cumulative_total_credits
+        return (0.0, 0.0)
+    return cumulative_gpa, cumulative_total_credits
 
 
 def generate_table_data(current_sem_modules):
@@ -62,5 +62,3 @@ def generate_table_data(current_sem_modules):
     table_data = [list(module[key] for key in keys) for module in current_sem_modules]
     table_data.insert(0,["Course","Grade","Credit Unit(s) Earned","Status"])
     return table_data
-
-print(type(sum([Decimal('3.0'), Decimal('3.5')])/Decimal('2.0')))

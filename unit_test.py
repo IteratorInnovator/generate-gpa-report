@@ -121,9 +121,8 @@ class UnitTest_process_data(unittest.TestCase):
         self.assertEqual(pd.calculate_cumulative_total(testcases[0]), (3.4, 4.0)) # 1 semester testcase
         self.assertEqual(pd.calculate_cumulative_total(testcases[1]), (3.47, 14.0)) # Mulitple semesters testcase
         self.assertEqual(pd.calculate_cumulative_total(testcases[2]), (3.58, 22.0)) # Multiple semesters testcase
-        self.assertEqual(pd.calculate_cumulative_total(testcases[3]), (0.0 ,0.0)) # Zero semester testcase
+        self.assertEqual(pd.calculate_cumulative_total(testcases[3]), (0.0, 0.0)) # Zero semester testcase
 
 
 if __name__ == "__main__":
-    # print(help(unittest))
     unittest.main()
