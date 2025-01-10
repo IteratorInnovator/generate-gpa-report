@@ -22,7 +22,7 @@ grade_to_points = {
 }
 
 
-def load_modules(json_file):
+def load_json(json_file):
     with open(json_file,'r') as file:
         return json.load(file)
 
