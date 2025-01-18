@@ -2,6 +2,7 @@ from process_data import *
 from generate_report import *
 from reportlab.platypus import SimpleDocTemplate, KeepTogether
 from reportlab.lib.pagesizes import letter
+from email_report import *
 
 def create_gpa_pdf_report():
     pdf_report = SimpleDocTemplate("GPA_report.pdf", pagesize=letter)
@@ -46,5 +47,9 @@ def create_gpa_pdf_report():
     
     # Build the pdf report
     pdf_report.build(elements)
+    
+    
 if __name__ == "__main__":
     create_gpa_pdf_report()
+    email_gpa_pdf_report("GPA_report.pdf")
+    

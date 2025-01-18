@@ -64,7 +64,7 @@ def calculate_cumulative_total(list_of_semester_totals):
     try:
         cumulative_gpa = round(cumulative_total_grade_points / cumulative_total_credits_earned, 2)
     except ZeroDivisionError as e:
-        return (0.0, 0.0)
+        return (0.0, 0.0, cumulative_total_credits_attempted)
     return cumulative_gpa, cumulative_total_credits_earned, cumulative_total_credits_attempted
 
 
