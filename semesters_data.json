@@ -54,6 +54,12 @@
                 "status": "In Progress"
             },
             {
+                "module": "Introductory Statistics",
+                "grade": "IP",
+                "credit_unit": "1.0",
+                "status": "In Progress"
+            },
+            {
                 "module": "Big Questions - Happiness and Suffering",
                 "grade": "IP",
                 "credit_unit": "1.0",

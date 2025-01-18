@@ -175,3 +175,6 @@ settings.json
 
 # Ignore student_info.json containing confidential information
 student_info.json
+
+# Ignore GPA_report.pdf
+GPA_report.pdf

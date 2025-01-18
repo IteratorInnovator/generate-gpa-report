@@ -104,13 +104,34 @@ class UnitTest_process_data(unittest.TestCase):
             }
         ],
         [
+            {
+                "module": "Management Communication",
+                "grade": "IP",
+                "credit_unit": "0.5",
+                "status": "In Progress"
+            },
+            {
+                "module": "Software Project Management",
+                "grade": "IP",
+                "credit_unit": "2.0",
+                "status": "In Progress"
+            },
+            {
+                "module": "Object-Oriented Programming",
+                "grade": "IP",
+                "credit_unit": "1.5",
+                "status": "In Progress"
+            }
+        ],
+        [
             
         ]]
-        self.assertEqual(pd.calculate_semester_total(testcases[0]), (3.4, 4.0)) # Basic testcase
-        self.assertEqual(pd.calculate_semester_total(testcases[1]), (3.6, 5.0)) # Basic testcase
-        self.assertEqual(pd.calculate_semester_total(testcases[2]), (1.9, 3.0)) # Lower grade range testcase
-        self.assertEqual(pd.calculate_semester_total(testcases[3]), (2.4, 4.0)) # Varying credit unit testcase
-        self.assertEqual(pd.calculate_semester_total(testcases[4]), (0.0, 0.0)) # Zero modules testcase
+        self.assertEqual(pd.calculate_semester_total(testcases[0]), (3.4, 4.0, 4.0)) # Basic testcase
+        self.assertEqual(pd.calculate_semester_total(testcases[1]), (3.6, 5.0, 5.0)) # Basic testcase
+        self.assertEqual(pd.calculate_semester_total(testcases[2]), (1.9, 3.0, 3.0)) # Lower grade range testcase
+        self.assertEqual(pd.calculate_semester_total(testcases[3]), (2.4, 4.0, 4.0)) # Varying credit unit testcase
+        self.assertEqual(pd.calculate_semester_total(testcases[4]), (0.0, 0.0, 4.0)) # In progress modules testcase
+        self.assertEqual(pd.calculate_semester_total(testcases[5]), (0.0, 0.0, 0.0)) # Zero modules testcase
     def test_calculate_cumulative_total(self):
         testcases = [
             [ (3.4, 4.0) ],
