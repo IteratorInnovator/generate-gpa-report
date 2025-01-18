@@ -134,15 +134,15 @@ class UnitTest_process_data(unittest.TestCase):
         self.assertEqual(pd.calculate_semester_total(testcases[5]), (0.0, 0.0, 0.0)) # Zero modules testcase
     def test_calculate_cumulative_total(self):
         testcases = [
-            [ (3.4, 4.0) ],
-            [ (2.7, 5.0), (4.3, 4.0), (3.58, 5.0) ],
-            [ (3.6, 4.0), (3.7, 4.0), (3.66, 5.0), (4.06, 5.0), (2.75, 4.0) ],
+            [ (3.4, 4.0, 4.0) ],
+            [ (2.7, 5.0, 5.0), (4.3, 4.0, 4.0), (3.58, 5.0, 5.0) ],
+            [ (3.6, 4.0, 2.0), (3.7, 4.0, 3.0), (3.66, 5.0, 2.0), (4.06, 5.0, 3.0), (2.75, 4.0, 3.0) ],
             []
         ]
-        self.assertEqual(pd.calculate_cumulative_total(testcases[0]), (3.4, 4.0)) # 1 semester testcase
-        self.assertEqual(pd.calculate_cumulative_total(testcases[1]), (3.47, 14.0)) # Mulitple semesters testcase
-        self.assertEqual(pd.calculate_cumulative_total(testcases[2]), (3.58, 22.0)) # Multiple semesters testcase
-        self.assertEqual(pd.calculate_cumulative_total(testcases[3]), (0.0, 0.0)) # Zero semester testcase
+        self.assertEqual(pd.calculate_cumulative_total(testcases[0]), (3.4, 4.0, 4.0)) # 1 semester testcase
+        self.assertEqual(pd.calculate_cumulative_total(testcases[1]), (3.47, 14.0, 14.0)) # Mulitple semesters testcase
+        self.assertEqual(pd.calculate_cumulative_total(testcases[2]), (3.58, 22.0, 13.0)) # Multiple semesters with IP mods testcase
+        self.assertEqual(pd.calculate_cumulative_total(testcases[3]), (0.0, 0.0, 0.0)) # Zero semester testcase
 
 
 if __name__ == "__main__":
