@@ -1,13 +1,13 @@
 # 📊 GPA Report Generator
 
-A Python-based project designed to process JSON files containing module and grade information and generate a professional PDF report of your curriculum and GPA.
+A Python-based project designed to process JSON files containing module, grade and student information and generate a professional PDF report of your curriculum and GPA.
 
 ## 🌟 Features
 
-- 🔄 **Automated GPA Calculation**: Seamlessly calculates your GPA based on the provided JSON file.
+- 🔄 **Accurate GPA Calculation**: Seamlessly calculates your GPA based on the provided JSON file.
 - 📄 **Professional PDF Report**: Generates a detailed PDF report summarizing your academic progress.
-- 📂 **Customizable Inputs**: Accepts JSON files with your curriculum and grade data for flexibility.
-- ⚡ **Fast and Efficient**: Processes large datasets and creates reports in seconds.
+- ✉️ **Email Functionality**: Sends the generated PDF report to a specified email address using SMTP, allowing you to conveniently share or access your results.
+- ✅ **Unit Testing**: Ensures the accuracy of GPA and credit calculations with robust unit tests implemented using Python's unittest module.
 
 ## 🚀 Getting Started
 
