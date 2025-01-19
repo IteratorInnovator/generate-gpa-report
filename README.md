@@ -25,7 +25,13 @@ Ensure you have the following installed:
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/IteratorInnovator/GPA-Report-Generator.git
-cd GPA-Report-Generator
+git clone https://github.com/IteratorInnovator/generate-gpa-report.git
+cd generate-gpa-report
 pip install -r requirements.txt
+python3 main.py
+```
+ ### Notes
+
+Ensure that your curriculum data follows the semester_data.json file. 
+If you would like to keep the email functionality, do create a .env file that stores the sender's email and app password, and the recipient email(s).
 
