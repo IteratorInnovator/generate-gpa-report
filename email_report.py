@@ -7,13 +7,14 @@ from process_data import load_json
 
 def draft_email_message(pdf_file,sender_email, recipient_email):
     student_info = load_json("student_info.json")
-    body_content = f"""
-Hi {student_info['name']},
+    body_content = f"""Hi {student_info['name']},
+    
 This email contains a copy of your GPA report for your reference.
 
 Key details:
 
 Name: {student_info['name']}
+School: {student_info['school']}
 Course of Study: {student_info['course_of_study']}
 
 The full report is attached to this email for safekeeping.
@@ -26,8 +27,18 @@ Ng Kok Jing
     msg['To'] = recipient_email
     msg['Subject'] = f"{student_info['name']} GPA Report"
     msg.set_content(body_content)
+    
+    # Raw content of the file (as a byte stream) is expected to be attached to the email,
+    # Binary reading refers to reading a file's raw bytes instead of its text content. 
+    # This is essential when handling non-text files like images, PDFs, or videos, 
+    # where the data is stored in a binary format.
     with open(pdf_file, 'rb') as f:
-        msg.add_attachment(f.read(), maintype="application", subtype='pdf', filename="GPA_report.pdf")
+        msg.add_attachment(
+            f.read(),                 # Raw file content
+            maintype="application",   # MIME type
+            subtype='pdf',            # MIME subtype
+            filename="GPA_report.pdf" # Attachment filename
+        )
     return msg
 
 def email_gpa_pdf_report(pdf_file):

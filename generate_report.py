@@ -105,9 +105,9 @@ def create_cumulative_summary(CGPA, total_credit_units_earned, total_credit_unit
     summary_text = f"""
     <p>
         <u><b>Cumulative Total</b></u><br/>
-        \tCourse Units Attempted = {total_credit_units_attempted}<br/>
-        \tCourse Units Earned = {total_credit_units_earned}<br/>
-        \tCumulative CPA = {CGPA}<br/>
+        Course Units Attempted = {total_credit_units_attempted}<br/>
+        Course Units Earned = {total_credit_units_earned}<br/>
+        Cumulative CPA = {CGPA}<br/>
     </p>
     """
     text_style = ParagraphStyle(name="style", fontName='Times', fontSize=11, alignment=0)
